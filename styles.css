@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #f5f5f5;
+    background-color: white;
     overflow-x: hidden;
 }
 
@@ -138,19 +138,13 @@ body {
 }
 
 .notice-card {
-    background: white;
+    background: 666;
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 12px;
     box-shadow: 0 0px 0px rgba(0,0,0,0);
     display: flex;
     gap: 12px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.notice-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .notice-icon {
@@ -184,13 +178,15 @@ body {
 
 /* Profile Container */
 .profile-container {
-    padding: 24px 16px;
     padding-bottom: 80px;
 }
 
 .profile-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 9px;
+    background-color: #f5f5f5;
 }
 
 .profile-photo {
@@ -232,11 +228,12 @@ body {
     color: #999;
 }
 
+
 .settings-section h3 {
+    padding-left: 13px;
     font-size: 14px;
     font-weight: 600;
     color: #666;
-    margin-bottom: 16px;
     letter-spacing: 0.5px;
 }
 
@@ -244,6 +241,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+    padding-bottom: 90px;
 }
 
 .setting-item {
@@ -251,8 +249,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px 16px;
-    background: white;
+    padding: 9px 6px;
+    background: 666;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     cursor: pointer;
@@ -305,7 +303,6 @@ body {
 .info-section {
     background: white;
     border-radius: 12px;
-    padding: 20px;
     margin-bottom: 16px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -337,13 +334,11 @@ body {
 .info-grid {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 
 .info-row {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
     padding: 8px 0;
     border-bottom: 1px solid #f5f5f5;
 }
@@ -458,10 +453,9 @@ body {
     }
 }
 
-/* .notice-card, */
+.notice-card,
 .setting-item,
 .info-section {
-    animation: fadeIn 0.3s ease-out;
     border: none;  /* removes any visible border */
     box-shadow: none
 }
